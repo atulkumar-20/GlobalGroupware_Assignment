@@ -64,10 +64,6 @@ yarn install
 pnpm install
 ```
 
-3. Create a `.env` file in the root directory (if needed):
-```env
-VITE_API_URL=your_api_url_here
-```
 
 4. Start the development server:
 ```bash
@@ -110,11 +106,6 @@ src/
 - `preview`: Preview production build
 - `lint`: Run ESLint
 
-## Environment Variables
-
-| Variable | Description | Required |
-|----------|-------------|-----------|
-| VITE_API_URL | API Base URL | Yes |
 
 ## Contributing
 
