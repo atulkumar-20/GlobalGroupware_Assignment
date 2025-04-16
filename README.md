@@ -1,54 +1,134 @@
-# React + TypeScript + Vite
+# React User Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern user management system built with React, TypeScript, and Vite. This application features a secure authentication system and user management interface with a kawaii-inspired design.
 
-Currently, two official plugins are available:
+Live : https://globalgroupware-assignment.onrender.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- 🔐 Secure Authentication System
+- 👥 User Management Dashboard
+- 🎨 Modern UI with Kawaii Design Elements
+- 📱 Responsive Layout
+- 🛡️ Protected Routes
+- ✨ Form Validation
+- 🔄 Real-time Data Updates
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Core
+- React 19
+- TypeScript
+- Vite 6
+
+### Styling & UI
+- TailwindCSS 4
+- Custom SVG Animations
+
+### State Management & Routing
+- React Router DOM 7
+- React Context API
+
+### Form Handling & Validation
+- React Hook Form 7
+- Zod 3
+- @hookform/resolvers
+
+### API Integration
+- Axios
+
+### Development Tools
+- ESLint 9
+- TypeScript ESLint
+- React Refresh
+
+## Prerequisites
+
+- Node.js (version >=18.0.0)
+- npm or yarn or pnpm
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone [repository-url]
+cd [project-name]
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
 ```
+
+3. Create a `.env` file in the root directory (if needed):
+```env
+VITE_API_URL=your_api_url_here
+```
+
+4. Start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## Build for Production
+
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
+
+## Project Structure
+
+```
+src/
+├── components/        # Reusable UI components
+├── contexts/         # React Context providers
+├── hooks/           # Custom React hooks
+├── types/           # TypeScript type definitions
+├── utils/           # Helper functions
+├── App.tsx          # Main application component
+└── main.tsx         # Application entry point
+```
+
+## Available Scripts
+
+- `dev`: Start development server
+- `build`: Build for production
+- `preview`: Preview production build
+- `lint`: Run ESLint
+
+## Environment Variables
+
+| Variable | Description | Required |
+|----------|-------------|-----------|
+| VITE_API_URL | API Base URL | Yes |
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Reqres.in](https://reqres.in) for providing the test API
+- Kawaii design inspiration
